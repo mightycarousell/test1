@@ -12,7 +12,7 @@ const job = new CronJob({
 });
 
 async function loadPage(){
-  var link = "https://sg.carousell.com/search/" + encodeURIComponent(process.env.ITEM) + "?sort_by=time_created%2Cdescending"
+  var link = "https://sg.carousell.com/categories/free-items-1898" + encodeURIComponent(process.env.ITEM) + "?sort_by=time_created%2Cdescending"
   var page = await context.newPage();
   await page.setUserAgent(
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3419.0 Safari/537.36"
